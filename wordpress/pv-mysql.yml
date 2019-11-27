@@ -11,4 +11,3 @@ spec:
   nfs:
     path: "/mysql"
     server: nfs01
-  volumeName: mysql-persistent-storage

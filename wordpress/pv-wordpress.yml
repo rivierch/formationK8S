@@ -11,4 +11,3 @@ spec:
   nfs:
     path: "/html"
     server: nfs01
-  volumeName: wordpress-persistent-storage
