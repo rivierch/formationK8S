@@ -9,9 +9,9 @@ spec:
       volumeMounts:
       - mountPath: /usr/share/nginx/html
         name: html-dir
-      volumes:
-      - name: html-dir
-        configMap:
+  volumes:
+    - name: html-dir
+      configMap:
         # Provide the name of the ConfigMap containing the files you want
         # to add to the container
-            name: app-config
+          name: app-config
