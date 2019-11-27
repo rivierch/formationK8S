@@ -3,6 +3,7 @@ kind: ConfigMap
 metadata:
   name: app-config
 data:
+  user: Cricri
   connection_string: localhost:4096
   external_url: google.com
   index.html: |
