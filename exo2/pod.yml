@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: pod1
+  name: pod1
 spec:
   name: pod1
   replicas: 1
