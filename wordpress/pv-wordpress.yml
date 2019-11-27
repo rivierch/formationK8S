@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: mysql-persistent-storage
+  name: wordpress-persistent-storage
 spec:
   storageClassName: manual
   capacity:
@@ -9,6 +9,6 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    path: "/mysql"
+    path: "/html"
     server: nfs01
-  volumeName: mysql-persistent-storage
+  volumeName: wordpress-persistent-storage
