@@ -3,6 +3,7 @@ kind: PersistentVolume
 metadata:
   name: my-pv
 spec:
+  storageClassName: manual
   capacity:
     storage: 2Gi
   accessModes:
