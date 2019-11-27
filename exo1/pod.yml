@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: crr-pod
+  labels:
+    app: crr-labels
+spec:
+  containers:
+  - name: crr-containers
+    image: nginx:1.7.9
+  - name: test-re
+    image: redis

@@ -1,0 +1,20 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: voting-deployment
+  namespace: vote
+spec:
+  selector:
+    matchLabels:
+      app: voting
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: voting
+    spec:
+      containers:
+      - name: votcrr
+        image: dockersamples/examplevotingapp_vote:before
+        ports:
+        - containerPort: 80
