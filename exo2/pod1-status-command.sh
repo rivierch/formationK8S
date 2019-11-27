@@ -1,0 +1,1 @@
+kubectl get pods pod1 -o jsonpath="{.status.phase}"
