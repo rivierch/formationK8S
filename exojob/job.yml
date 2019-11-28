@@ -8,7 +8,8 @@ spec:
   parallelism: 2
   template:
     metadata:
-      labels: awesome-job
+      labels: 
+        id: awesome-job
     spec:
       containers:
       - image: busybox:1.31.0
