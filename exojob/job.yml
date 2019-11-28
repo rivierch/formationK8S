@@ -18,5 +18,10 @@ spec:
           - /bin/sh
           - -c
           - sleep 2 && echo done
+        resources:
+          limits:
+            memory: "50Mi"
+          requests:
+            memory: "20Mi"
       restartPolicy: Never
 
