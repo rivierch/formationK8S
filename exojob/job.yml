@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: my-job
+  namespace: neptune
+spec:
+  completions: 3
+  parallelism: 2
+  template:
+    metadata:
+      labels: awesome-job
+    spec:
+      containers:
+      - image: busybox:1.31.0
+        name: my-job
+        args:
+          - /bin/sh
+          - -c
+          - sleep 2 && echo done
+      restartPolicy: Never
+
