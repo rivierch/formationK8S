@@ -17,4 +17,4 @@ spec:
           - /tmp/ready
       initialDelaySeconds: 5
       failureThreshold: 10
-      periodSecond: 10
+      periodSeconds: 10
