@@ -11,8 +11,6 @@ spec:
     readinessProbe:
       exec:
         command:
-          - sh
-          - -c
           - cat
           - /tmp/ready
       initialDelaySeconds: 5
