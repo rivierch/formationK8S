@@ -32,6 +32,3 @@ jobs:
         if: github.inputs.release_name != ''
         run: echo is not null
 
-      - name: Run a one-line script 3
-        if: -z github.inputs.release_name
-        run: echo is null
